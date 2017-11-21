@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>
+      Loja Carros
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+  <p>
+    <ion-item-group>
+      <ion-item *ngFor="let carro of carros" (click)="seleciona(carro)">
+        {{ carro.nome }}
+      </ion-item>
+      
+    </ion-item-group>
+  </p>
+</ion-content>
